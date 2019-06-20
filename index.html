@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+
+</head>
+<body onload="run()">
+    <div>
+        <form>
+            <div style="width: 600px">
+                <div>
+                    <h3><b>Add New Product</b></h3>
+                </div>
+                <div style="width: 350px;height: 80px;background-color:ghostwhite">
+                    <center>
+                        <input id="newproduct" type="text" placeholder="New Product" style="margin-top: 30px">
+                        <input type="button" value = "Add" onclick="addProduct()">
+                    </center>
+                </div>
+                <div>
+                    <h3><b>Display All Product</b></h3>
+                    <br>
+                </div>
+                <div style="display: inline-block;width: 50%">
+                    <p><b>Product Name</b></p>
+                </div>
+                <div style="float: right">
+                    <p id = 'amount' style="color: red"></p>
+                </div>
+                <div>
+                    <table id="products" cellspacing="0" cellpadding="5"></table>
+                </div>
+            </div>
+            <div id="edit">
+            </div>
+        </form>
+</body>
+<script src="script.js"></script>
+</html>
